@@ -92,11 +92,11 @@ int main() {
         else if (choice == "2") {
             cout << GREEN << "Fibonacci Sequence: " << RESET;
             for (int i = 0; i < n; i++) {
-                vector<vector<long long>> F = Matrix_Fibonacci(i + 1);
+                vector<vector<long long>> F = Matrix_Fibonacci(i);
                 cout << F[0][0] << " ";
             }
             cout << endl;
-            vector<vector<long long>> Fn = Matrix_Fibonacci(n);
+            vector<vector<long long>> Fn = Matrix_Fibonacci(n-1);
             cout << BLUE << "The " << n << "th Fibonacci number using matrix method is: " 
                 << RESET << Fn[0][0];
         }
